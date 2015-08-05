@@ -1,0 +1,13 @@
+.new-materials-links {background-color:#fffffe; margin-top:20px;}
+
+.new-materials-links .group-blocks--four .group-blocks--first {padding-left: 10px;}
+.new-materials-links .group-blocks--four .group-blocks--fourth {padding-right: 10px;}
+
+.new-materials-links .group-blocks--wrapper .group-blocks--four {border-top: none; margin-top: 0px;}
+
+.new-materials-links h2.pane-title {margin-left: 10px; padding-top: 20px; border-bottom: 1px solid rgba(0,0,0,0.7)}
+
+.ebiblioteket-list .group-blocks--three .group-blocks--first {padding-left: 10px;}
+.ebiblioteket-list .group-blocks--three .group-blocks--third {padding-right: 10px;}
+
+.ebiblioteket-list .group-blocks--three img {padding: 0 0.0em; border:  1px solid rgba(0,0,0,0.7)}
