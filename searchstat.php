@@ -11,8 +11,8 @@ $url = 'https://ws.webtrends.com/v3/Reporting/profiles/77611/reports/34awBVEP0P6
 $context = stream_context_create(array(
   'http' => array(
     'header' => "Authorization: Basic " . base64_encode("$username:$password"),
-    //'proxy' => 'tcp://172.18.0.40:8080',
-    //'request_fulluri' => true
+  //'proxy' => 'tcp://172.18.0.40:8080',
+  //'request_fulluri' => true
   )
   ));
 
@@ -79,8 +79,11 @@ $body_list = $doc->getElementsByTagName('body');
 $style_element = $doc->createElement('style', $style);
 $style_element->setAttribute('type', "text/css");
 $body = $body_list->item(0);
-  $body->appendChild($style_element);
+$body->appendChild($style_element);
 
+$table = $body->getElementsByTagName('table')->item(0);
+$h1 = $doc->createElement('h1', "Søgninger de sidste 7 dage");
+$body->insertBefore($h1, $table );
 
 echo $doc->saveHTML();
 //echo $data;
