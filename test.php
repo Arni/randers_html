@@ -11,8 +11,8 @@ $url = 'https://ws.webtrends.com/v3/Reporting/profiles/77611/reports/34awBVEP0P6
 $context = stream_context_create(array(
   'http' => array(
     'header' => "Authorization: Basic " . base64_encode("$username:$password"),
-    'proxy' => 'tcp://172.18.0.40:8080',
-    'request_fulluri' => true
+    //'proxy' => 'tcp://172.18.0.40:8080',
+    //'request_fulluri' => true
   )
   ));
 
